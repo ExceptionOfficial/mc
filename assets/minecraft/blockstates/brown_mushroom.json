@@ -1,0 +1,13 @@
+{
+    "__comment": "Fair warning, this format is highly likely to change even more in the future!",
+    "variants": {
+        "normal": [
+						{ "model": "brown_mushroom", "weight"=3 },
+						{ "model": "brown_mushroom_0" },
+						{ "model": "brown_mushroom_1" },
+						{ "model": "brown_mushroom_2" },
+						{ "model": "brown_mushroom_3" },
+						{ "model": "brown_mushroom_4" }
+			]
+    }
+}

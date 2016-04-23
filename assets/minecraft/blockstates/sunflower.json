@@ -1,0 +1,29 @@
+{
+    "variants": {
+        "half=lower": { "model": "double_sunflower_bottom" },
+        "half=upper":   [ { "model": "double_sunflower_top", "weight"=3 },
+			{ "model": "double_sunflower_top_0" },
+			{ "model": "double_sunflower_top_1" },
+			{ "model": "double_sunflower_top_2", "weight"=3 },
+			{ "model": "double_sunflower_top_3", "weight"=3 },
+			{ "model": "double_sunflower_top_4", "weight"=3 },
+			{ "model": "double_sunflower_top_5", "weight"=3 },
+			{ "model": "double_sunflower_top_6", "weight"=3 },
+			{ "model": "double_sunflower_top_7", "weight"=3 },
+			{ "model": "double_sunflower_top_8", "weight"=3 },
+			{ "model": "double_sunflower_top_9" },
+			{ "model": "double_sunflower_top_10" },
+			{ "model": "double_sunflower_top_11" },
+			{ "model": "double_sunflower_top_12" },
+			{ "model": "double_sunflower_top_13" },
+			{ "model": "double_sunflower_top_14" },
+			{ "model": "double_sunflower_top_15" },
+			{ "model": "double_sunflower_top_16" },
+			{ "model": "double_sunflower_top_17" },
+			{ "model": "double_sunflower_top_18" },
+			{ "model": "double_sunflower_top_19" },
+			{ "model": "double_sunflower_top_20" },
+			{ "model": "double_sunflower_top_21" },
+			{ "model": "double_sunflower_top_22" } ]
+    }
+}

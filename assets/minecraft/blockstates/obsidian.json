@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "normal": [ { "model": "obsidian" },
+				{ "model": "obsidian", "y": 90 },
+				{ "model": "obsidian", "y": 180 },
+				{ "model": "obsidian", "y": 270 } ]
+    }
+}

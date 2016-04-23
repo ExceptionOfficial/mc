@@ -1,0 +1,24 @@
+{
+    "variants": {
+        "facing=north": [ { "model": "pumpkin" },
+				{ "model": "pumpkin_0" },
+				{ "model": "pumpkin_1" },
+				{ "model": "pumpkin_2" },
+				{ "model": "pumpkin_3" } ],
+		"facing=east":  [ { "model": "pumpkin", "y": 90 },
+				{ "model": "pumpkin_0", "y": 90 },
+				{ "model": "pumpkin_1", "y": 90 },
+				{ "model": "pumpkin_2", "y": 90 },
+				{ "model": "pumpkin_3", "y": 90 } ],
+        "facing=south": [ { "model": "pumpkin", "y": 180 },
+				{ "model": "pumpkin_0", "y": 180 },
+				{ "model": "pumpkin_1", "y": 180 },
+				{ "model": "pumpkin_2", "y": 180 },
+				{ "model": "pumpkin_3", "y": 180 } ],
+        "facing=west":  [ { "model": "pumpkin", "y": 270 },
+				{ "model": "pumpkin_0", "y": 270 },
+				{ "model": "pumpkin_1", "y": 270 },
+				{ "model": "pumpkin_2", "y": 270 },
+				{ "model": "pumpkin_3", "y": 270 } ]
+    }
+}

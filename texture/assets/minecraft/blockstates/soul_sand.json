@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": [ 
+			{ "model": "soul_sand"           , "weight": 30 },
+			{ "model": "soul_sand1"          , "weight": 1 },
+			{ "model": "soul_sand2"          , "weight": 1 },
+			{ "model": "soul_sand3"          , "weight": 1 }
+		]
+    }
+}

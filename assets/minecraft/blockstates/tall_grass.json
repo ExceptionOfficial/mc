@@ -1,0 +1,15 @@
+{
+    "variants": {
+        "normal": [ { "model": "tall_grass", "weight"=10},
+				{ "model": "tall_grass_0"},
+				{ "model": "tall_grass_1"},
+				{ "model": "tall_grass_2", "weight"=4},
+				{ "model": "tall_grass_3"},
+				{ "model": "tall_grass_4"},
+				{ "model": "tall_grass_5"},
+				{ "model": "tall_grass_6", "weight"=4},
+				{ "model": "tall_grass_7"},
+				{ "model": "tall_grass_8", "weight"=2},
+				{ "model": "tall_grass_9", "weight"=1} ]
+    }
+}

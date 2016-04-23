@@ -1,0 +1,18 @@
+{
+    "variants": {
+        "age=0": [ { "model": "potatoes_stage0" },
+			{ "model": "potatoes_stage0_0" },
+			{ "model": "potatoes_stage0_1" } ],
+        "age=1": [ { "model": "potatoes_stage0" },
+			{ "model": "potatoes_stage0_0" },
+			{ "model": "potatoes_stage0_1" } ],
+        "age=2": { "model": "potatoes_stage1" },
+        "age=3": { "model": "potatoes_stage1" },
+        "age=4": { "model": "potatoes_stage2" },
+        "age=5": { "model": "potatoes_stage2" },
+        "age=6": { "model": "potatoes_stage2" },
+        "age=7": [ { "model": "potatoes_stage3" },
+		 { "model": "potatoes_stage3_0" },
+		 { "model": "potatoes_stage3_1" } ]
+    }
+}

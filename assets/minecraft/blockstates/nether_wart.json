@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "age=0": [ { "model": "nether_wart_stage0" },
+				{ "model": "nether_wart_stage0_0" },
+				{ "model": "nether_wart_stage0_1" } ],
+        "age=1": [ { "model": "nether_wart_stage1" },
+				{ "model": "nether_wart_stage1_0" },
+				{ "model": "nether_wart_stage1_1" } ],
+        "age=2": { "model": "nether_wart_stage1" },
+        "age=3": [ { "model": "nether_wart_stage2" },
+				{ "model": "nether_wart_stage2_0" },
+				{ "model": "nether_wart_stage2_1" } ]
+    }
+}

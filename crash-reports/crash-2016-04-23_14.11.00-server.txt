@@ -1,0 +1,207 @@
+---- Minecraft Crash Report ----
+// My bad.
+
+Time: 4/23/16 2:11 PM
+Description: Watching Server
+
+java.lang.Error
+	at java.lang.System$2.getEnumConstantsShared(System.java:1192)
+	at java.util.EnumSet.getUniverse(EnumSet.java:388)
+	at java.util.EnumSet.noneOf(EnumSet.java:108)
+	at ayr.a(SourceFile:236)
+	at ayr.a(SourceFile:310)
+	at ayr.a(SourceFile:169)
+	at ayr.a(SourceFile:137)
+	at ayp.a(SourceFile:82)
+	at ayp.a(SourceFile:40)
+	at ayp.a(SourceFile:30)
+	at vf.a(SourceFile:111)
+	at ve.a(SourceFile:66)
+	at tu.a(SourceFile:57)
+	at tl.a(SourceFile:94)
+	at sb.cm(SourceFile:635)
+	at sa.n(SourceFile:1757)
+	at sb.n(SourceFile:488)
+	at wh.n(SourceFile:128)
+	at sa.m(SourceFile:1619)
+	at sb.m(SourceFile:276)
+	at aht.a(SourceFile:1516)
+	at lp.a(SourceFile:717)
+	at aht.g(SourceFile:1494)
+	at aht.k(SourceFile:1384)
+	at lp.k(SourceFile:550)
+	at net.minecraft.server.MinecraftServer.D(SourceFile:625)
+	at la.D(SourceFile:339)
+	at net.minecraft.server.MinecraftServer.C(SourceFile:553)
+	at net.minecraft.server.MinecraftServer.run(SourceFile:457)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.lang.System$2.getEnumConstantsShared(System.java:1192)
+	at java.util.EnumSet.getUniverse(EnumSet.java:388)
+	at java.util.EnumSet.noneOf(EnumSet.java:108)
+	at ayr.a(SourceFile:236)
+	at ayr.a(SourceFile:310)
+	at ayr.a(SourceFile:169)
+	at ayr.a(SourceFile:137)
+	at ayp.a(SourceFile:82)
+	at ayp.a(SourceFile:40)
+	at ayp.a(SourceFile:30)
+	at vf.a(SourceFile:111)
+	at ve.a(SourceFile:66)
+	at tu.a(SourceFile:57)
+	at tl.a(SourceFile:94)
+	at sb.cm(SourceFile:635)
+	at sa.n(SourceFile:1757)
+	at sb.n(SourceFile:488)
+	at wh.n(SourceFile:128)
+	at sa.m(SourceFile:1619)
+	at sb.m(SourceFile:276)
+	at aht.a(SourceFile:1516)
+	at lp.a(SourceFile:717)
+	at aht.g(SourceFile:1494)
+	at aht.k(SourceFile:1384)
+	at lp.k(SourceFile:550)
+	at net.minecraft.server.MinecraftServer.D(SourceFile:625)
+	at la.D(SourceFile:339)
+	at net.minecraft.server.MinecraftServer.C(SourceFile:553)
+
+-- Thread Dump --
+Details:
+	Threads: "File IO Thread" Id=34 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at bba.c(SourceFile:44)
+	at bba.run(SourceFile:30)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Java2D Disposer" Id=24 WAITING on java.lang.ref.ReferenceQueue$Lock@5bec37e9
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@5bec37e9
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:135)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+	at sun.java2d.Disposer.run(Disposer.java:145)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Server Watchdog" Id=23 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:446)
+	at lb.run(SourceFile:43)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Query Listener #1" Id=22 RUNNABLE
+	at java.net.PlainDatagramSocketImpl.receive0(Native Method)
+	-  locked java.net.PlainDatagramSocketImpl@714ad124
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:146)
+	-  locked java.net.PlainDatagramSocketImpl@714ad124
+	at java.net.DatagramSocket.receive(DatagramSocket.java:817)
+	-  locked java.net.DatagramPacket@3dd00249
+	-  locked java.net.DatagramSocket@395c8a5d
+	at nb.run(SourceFile:268)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Epoll Server IO #1" Id=20 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Epoll Server IO #0" Id=19 RUNNABLE
+	at eo.a(SourceFile:27)
+	at eo.encode(SourceFile:15)
+	at io.netty.handler.codec.MessageToByteEncoder.write(MessageToByteEncoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite(AbstractChannelHandlerContext.java:658)
+	at io.netty.channel.AbstractChannelHandlerContext.write(AbstractChannelHandlerContext.java:716)
+	at io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:706)
+	at io.netty.channel.AbstractChannelHandlerContext.writeAndFlush(AbstractChannelHandlerContext.java:741)
+	at io.netty.channel.DefaultChannelPipeline.writeAndFlush(DefaultChannelPipeline.java:895)
+	...
+
+
+"Server console handler" Id=16 RUNNABLE (in native)
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:272)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	-  locked java.io.BufferedInputStream@23462653
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	-  locked java.io.InputStreamReader@57beb073
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	...
+
+
+"DestroyJavaVM" Id=15 RUNNABLE
+
+
+"Server thread" Id=13 RUNNABLE
+	at java.lang.System$2.getEnumConstantsShared(System.java:1192)
+	at java.util.EnumSet.getUniverse(EnumSet.java:388)
+	at java.util.EnumSet.noneOf(EnumSet.java:108)
+	at ayr.a(SourceFile:236)
+	at ayr.a(SourceFile:310)
+	at ayr.a(SourceFile:169)
+	at ayr.a(SourceFile:137)
+	at ayp.a(SourceFile:82)
+	...
+
+
+"Server Infinisleeper" Id=12 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at la$1.run(SourceFile:77)
+
+
+"Snooper Timer" Id=11 TIMED_WAITING on java.util.TaskQueue@28327b06
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@28327b06
+	at java.util.TimerThread.mainLoop(Timer.java:552)
+	at java.util.TimerThread.run(Timer.java:505)
+
+
+"Signal Dispatcher" Id=5 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@a2adb88
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@a2adb88
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:135)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@3b2c2ef
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@3b2c2ef
+	at java.lang.Object.wait(Object.java:503)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:133)
+
+
+
+Stacktrace:
+	at lb.run(SourceFile:59)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.9.2
+	Operating System: Linux (amd64) version 3.13.0-85-generic
+	Java Version: 1.7.0_95, Oracle Corporation
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 216734640 bytes (206 MB) / 410714112 bytes (391 MB) up to 620429312 bytes (591 MB)
+	JVM Flags: 7 total; -Xms400M -Xmx600M -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+CMSIncrementalPacing -XX:ParallelGCThreads=1 -XX:+AggressiveOpts
+	IntCache: cache: 1, tcache: 1, allocated: 12, tallocated: 94
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 20; [lr['JustBroCorp'/424, l='LifeWorld', x=3452.87, y=63.00, z=1029.71]]
+	Is Modded: Unknown (can't tell)
+	Type: Dedicated Server (map_server.txt)

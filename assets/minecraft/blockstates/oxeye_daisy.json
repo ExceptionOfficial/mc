@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "normal": [ { "model": "daisy" },
+		{ "model": "daisy_0" },
+		{ "model": "daisy_1" },
+		{ "model": "daisy_2" },
+		{ "model": "daisy_3" },
+		{ "model": "daisy_4" },
+		{ "model": "daisy_5" },
+		{ "model": "daisy_6" },
+		{ "model": "daisy_7" },
+		{ "model": "daisy_8" },
+		{ "model": "daisy_9" },
+		{ "model": "daisy_10" } ]
+    }
+}

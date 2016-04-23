@@ -1,0 +1,14 @@
+{
+    "variants": {
+        "powered=false": [ { "model": "wooden_pressure_plate_up" },
+				{ "model": "wooden_pressure_plate_up_0" },
+				{ "model": "wooden_pressure_plate_up_1" },
+				{ "model": "wooden_pressure_plate_up_2" },
+				{ "model": "wooden_pressure_plate_up_3" } ],
+        "powered=true": [ { "model": "wooden_pressure_plate_down" },
+				{ "model": "wooden_pressure_plate_down_0" },
+				{ "model": "wooden_pressure_plate_down_1" },
+				{ "model": "wooden_pressure_plate_down_2" },
+				{ "model": "wooden_pressure_plate_down_3" } ]
+    }
+}

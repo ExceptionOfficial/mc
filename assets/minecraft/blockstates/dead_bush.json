@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "normal": [ { "model": "dead_bush" },
+			{ "model": "dead_bush_0" },
+			{ "model": "dead_bush_1" },
+			{ "model": "dead_bush_2" },
+			{ "model": "dead_bush_3" },
+			{ "model": "dead_bush_4" },
+			{ "model": "dead_bush_5" },
+			{ "model": "dead_bush_6" },
+			{ "model": "dead_bush_7" },
+			{ "model": "dead_bush_8" },
+			{ "model": "dead_bush_9" },
+			{ "model": "dead_bush_10" } ]
+    }
+}

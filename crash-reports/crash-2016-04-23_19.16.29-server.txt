@@ -1,0 +1,183 @@
+---- Minecraft Crash Report ----
+// Everything's going to plan. No, really, that was supposed to happen.
+
+Time: 4/23/16 7:16 PM
+Description: Watching Server
+
+java.lang.Error
+	at ol.a(SourceFile:45)
+	at lo.b(SourceFile:65)
+	at lo.c(SourceFile:73)
+	at lo.d(SourceFile:91)
+	at aht.a(SourceFile:298)
+	at aht.f(SourceFile:294)
+	at aht.o(SourceFile:675)
+	at rr.d(SourceFile:704)
+	at sa.g(SourceFile:1503)
+	at xq.g(SourceFile:572)
+	at sa.n(SourceFile:1786)
+	at sa.m(SourceFile:1619)
+	at xq.m(SourceFile:577)
+	at aht.a(SourceFile:1516)
+	at lp.a(SourceFile:717)
+	at aht.g(SourceFile:1494)
+	at aht.k(SourceFile:1384)
+	at lp.k(SourceFile:550)
+	at net.minecraft.server.MinecraftServer.D(SourceFile:625)
+	at la.D(SourceFile:339)
+	at net.minecraft.server.MinecraftServer.C(SourceFile:553)
+	at net.minecraft.server.MinecraftServer.run(SourceFile:457)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at ol.a(SourceFile:45)
+	at lo.b(SourceFile:65)
+	at lo.c(SourceFile:73)
+	at lo.d(SourceFile:91)
+	at aht.a(SourceFile:298)
+	at aht.f(SourceFile:294)
+	at aht.o(SourceFile:675)
+	at rr.d(SourceFile:704)
+	at sa.g(SourceFile:1503)
+	at xq.g(SourceFile:572)
+	at sa.n(SourceFile:1786)
+	at sa.m(SourceFile:1619)
+	at xq.m(SourceFile:577)
+	at aht.a(SourceFile:1516)
+	at lp.a(SourceFile:717)
+	at aht.g(SourceFile:1494)
+	at aht.k(SourceFile:1384)
+	at lp.k(SourceFile:550)
+	at net.minecraft.server.MinecraftServer.D(SourceFile:625)
+	at la.D(SourceFile:339)
+	at net.minecraft.server.MinecraftServer.C(SourceFile:553)
+
+-- Thread Dump --
+Details:
+	Threads: "Java2D Disposer" Id=26 WAITING on java.lang.ref.ReferenceQueue$Lock@6e2068d
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@6e2068d
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:135)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+	at sun.java2d.Disposer.run(Disposer.java:145)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Server Watchdog" Id=25 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:446)
+	at lb.run(SourceFile:43)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Query Listener #1" Id=24 RUNNABLE
+	at java.net.PlainDatagramSocketImpl.receive0(Native Method)
+	-  locked java.net.PlainDatagramSocketImpl@611c1682
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:146)
+	-  locked java.net.PlainDatagramSocketImpl@611c1682
+	at java.net.DatagramSocket.receive(DatagramSocket.java:817)
+	-  locked java.net.DatagramPacket@45fcaedf
+	-  locked java.net.DatagramSocket@6e43a3a9
+	at nb.run(SourceFile:268)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Epoll Server IO #1" Id=19 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Epoll Server IO #0" Id=18 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Server console handler" Id=16 RUNNABLE (in native)
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:272)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	-  locked java.io.BufferedInputStream@503cd65e
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	-  locked java.io.InputStreamReader@6ef8fff2
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	...
+
+
+"DestroyJavaVM" Id=15 RUNNABLE
+
+
+"Server thread" Id=13 RUNNABLE
+	at ol.a(SourceFile:45)
+	at lo.b(SourceFile:65)
+	at lo.c(SourceFile:73)
+	at lo.d(SourceFile:91)
+	at aht.a(SourceFile:298)
+	at aht.f(SourceFile:294)
+	at aht.o(SourceFile:675)
+	at rr.d(SourceFile:704)
+	...
+
+
+"Server Infinisleeper" Id=12 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at la$1.run(SourceFile:77)
+
+
+"Snooper Timer" Id=11 WAITING on java.util.TaskQueue@1d6ba1c9
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@1d6ba1c9
+	at java.lang.Object.wait(Object.java:503)
+	at java.util.TimerThread.mainLoop(Timer.java:526)
+	at java.util.TimerThread.run(Timer.java:505)
+
+
+"Signal Dispatcher" Id=5 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@54aa236
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@54aa236
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:135)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@66df89f0
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@66df89f0
+	at java.lang.Object.wait(Object.java:503)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:133)
+
+
+
+Stacktrace:
+	at lb.run(SourceFile:59)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.9.2
+	Operating System: Linux (amd64) version 3.13.0-85-generic
+	Java Version: 1.7.0_95, Oracle Corporation
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 222632352 bytes (212 MB) / 410714112 bytes (391 MB) up to 620429312 bytes (591 MB)
+	JVM Flags: 7 total; -Xms400M -Xmx600M -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+CMSIncrementalPacing -XX:ParallelGCThreads=1 -XX:+AggressiveOpts
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 20; [lr['Wkps_GuiZisS'/409, l='LifeWorld', x=156.62, y=99.00, z=126.26]]
+	Is Modded: Unknown (can't tell)
+	Type: Dedicated Server (map_server.txt)

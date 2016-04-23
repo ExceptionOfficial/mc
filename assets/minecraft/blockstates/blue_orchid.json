@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "normal": [ { "model": "orchid" },
+		{ "model": "orchid_0" },
+		{ "model": "orchid_1" },
+		{ "model": "orchid_2" },
+		{ "model": "orchid_3" },
+		{ "model": "orchid_4" },
+		{ "model": "orchid_5" },
+		{ "model": "orchid_6" },
+		{ "model": "orchid_7" },
+		{ "model": "orchid_8" },
+		{ "model": "orchid_9" },
+		{ "model": "orchid_10" } ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "variants": {
+        "normal": [
+		{ "model": "allium" },
+		{ "model": "allium_0" },
+		{ "model": "allium_1" },
+		{ "model": "allium_2" },
+		{ "model": "allium_3" },
+		{ "model": "allium_4" },
+		{ "model": "allium_5" },
+		{ "model": "allium_6" },
+		{ "model": "allium_7" },
+		{ "model": "allium_8" },
+		{ "model": "allium_9" },
+		{ "model": "allium_10" },
+		{ "model": "allium_11" },
+		{ "model": "allium_12" },
+		{ "model": "allium_13" },
+		{ "model": "allium_14" },
+		{ "model": "allium_15" },
+		{ "model": "allium_16" },
+		{ "model": "allium_17" },
+		{ "model": "allium_18" },
+		{ "model": "allium_19" } ]
+    }
+}

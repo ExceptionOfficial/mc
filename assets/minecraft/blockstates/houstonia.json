@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "normal": [ { "model": "houstonia" },
+			{ "model": "houstonia_0" },
+			{ "model": "houstonia_1" },
+			{ "model": "houstonia_2" },
+			{ "model": "houstonia_3" },
+			{ "model": "houstonia_4" },
+			{ "model": "houstonia_5" },
+			{ "model": "houstonia_6" },
+			{ "model": "houstonia_7" } ]
+    }
+}

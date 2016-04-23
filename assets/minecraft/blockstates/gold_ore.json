@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "normal": [
+		{ "model": "gold_ore" },
+		{ "model": "gold_ore_0" },
+		{ "model": "gold_ore_1" }
+			]
+    }
+}

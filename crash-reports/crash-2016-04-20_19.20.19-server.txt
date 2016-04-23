@@ -1,0 +1,155 @@
+---- Minecraft Crash Report ----
+// Why is it breaking :(
+
+Time: 4/20/16 7:20 PM
+Description: Watching Server
+
+java.lang.Error
+	at ase.a(SourceFile:520)
+	at aht.b(SourceFile:625)
+	at aht.c(SourceFile:2137)
+	at aht.w(SourceFile:2081)
+	at lp.i(SourceFile:339)
+	at lp.j(SourceFile:346)
+	at lp.d(SourceFile:218)
+	at net.minecraft.server.MinecraftServer.D(SourceFile:617)
+	at la.D(SourceFile:339)
+	at net.minecraft.server.MinecraftServer.C(SourceFile:553)
+	at net.minecraft.server.MinecraftServer.run(SourceFile:457)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at ase.a(SourceFile:520)
+	at aht.b(SourceFile:625)
+	at aht.c(SourceFile:2137)
+	at aht.w(SourceFile:2081)
+	at lp.i(SourceFile:339)
+	at lp.j(SourceFile:346)
+	at lp.d(SourceFile:218)
+	at net.minecraft.server.MinecraftServer.D(SourceFile:617)
+	at la.D(SourceFile:339)
+	at net.minecraft.server.MinecraftServer.C(SourceFile:553)
+
+-- Thread Dump --
+Details:
+	Threads: "File IO Thread" Id=26 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at bba.c(SourceFile:51)
+	at bba.run(SourceFile:30)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Java2D Disposer" Id=23 WAITING on java.lang.ref.ReferenceQueue$Lock@5c09dbb4
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@5c09dbb4
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:135)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+	at sun.java2d.Disposer.run(Disposer.java:145)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Server Watchdog" Id=22 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:446)
+	at lb.run(SourceFile:43)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Epoll Server IO #1" Id=20 RUNNABLE (in native)
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Epoll Server IO #0" Id=19 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait(Native Method)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:194)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:219)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Server console handler" Id=16 RUNNABLE (in native)
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:272)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	-  locked java.io.BufferedInputStream@b3735a1
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	-  locked java.io.InputStreamReader@772fa2bc
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	...
+
+
+"DestroyJavaVM" Id=15 RUNNABLE
+
+
+"Server thread" Id=13 RUNNABLE
+	at ase.a(SourceFile:520)
+	at aht.b(SourceFile:625)
+	at aht.c(SourceFile:2137)
+	at aht.w(SourceFile:2081)
+	at lp.i(SourceFile:339)
+	at lp.j(SourceFile:346)
+	at lp.d(SourceFile:218)
+	at net.minecraft.server.MinecraftServer.D(SourceFile:617)
+	...
+
+
+"Server Infinisleeper" Id=12 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at la$1.run(SourceFile:77)
+
+
+"Snooper Timer" Id=11 TIMED_WAITING on java.util.TaskQueue@586521c5
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@586521c5
+	at java.util.TimerThread.mainLoop(Timer.java:552)
+	at java.util.TimerThread.run(Timer.java:505)
+
+
+"Signal Dispatcher" Id=5 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@578c39d9
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@578c39d9
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:135)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@372a0276
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@372a0276
+	at java.lang.Object.wait(Object.java:503)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:133)
+
+
+
+Stacktrace:
+	at lb.run(SourceFile:59)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.9.2
+	Operating System: Linux (amd64) version 3.13.0-74-generic
+	Java Version: 1.7.0_95, Oracle Corporation
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 253796960 bytes (242 MB) / 410714112 bytes (391 MB) up to 620429312 bytes (591 MB)
+	JVM Flags: 6 total; -Xms400M -Xmx600M -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+CMSIncrementalPacing -XX:+AggressiveOpts
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 20; [lr['JustBroCorp'/371, l='LifeWorld', x=3263.39, y=15.00, z=979.70]]
+	Is Modded: Unknown (can't tell)
+	Type: Dedicated Server (map_server.txt)

@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "normal": [ { "model": "glowstone" },
+				{ "model": "glowstone", "y": 90 },
+				{ "model": "glowstone", "y": 180 },
+				{ "model": "glowstone", "y": 270 } ]
+    }
+}
