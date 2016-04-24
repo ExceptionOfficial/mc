@@ -1,0 +1,202 @@
+---- Minecraft Crash Report ----
+// Hey, that tickles! Hehehe!
+
+Time: 4/24/16 11:45 AM
+Description: Watching Server
+
+java.lang.Error
+	at java.io.RandomAccessFile.readBytes0(Native Method)
+	at java.io.RandomAccessFile.readBytes(RandomAccessFile.java:350)
+	at java.io.RandomAccessFile.read(RandomAccessFile.java:408)
+	at asq.a(SourceFile:207)
+	at asr.c(SourceFile:89)
+	at ass.a(SourceFile:62)
+	at lo.f(SourceFile:124)
+	at lo.c(SourceFile:76)
+	at lu.<init>(SourceFile:40)
+	at lv.c(SourceFile:195)
+	at lv.c(SourceFile:287)
+	at mm.d(SourceFile:334)
+	at mb.a(SourceFile:508)
+	at it.a(SourceFile:126)
+	at it$b.a(SourceFile:18)
+	at fh$1.run(SourceFile:13)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at g.a(SourceFile:45)
+	at net.minecraft.server.MinecraftServer.D(SourceFile:597)
+	at la.D(SourceFile:339)
+	at net.minecraft.server.MinecraftServer.C(SourceFile:553)
+	at net.minecraft.server.MinecraftServer.run(SourceFile:457)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at java.io.RandomAccessFile.readBytes0(Native Method)
+	at java.io.RandomAccessFile.readBytes(RandomAccessFile.java:350)
+	at java.io.RandomAccessFile.read(RandomAccessFile.java:408)
+	at asq.a(SourceFile:207)
+	at asr.c(SourceFile:89)
+	at ass.a(SourceFile:62)
+	at lo.f(SourceFile:124)
+	at lo.c(SourceFile:76)
+	at lu.<init>(SourceFile:40)
+	at lv.c(SourceFile:195)
+	at lv.c(SourceFile:287)
+	at mm.d(SourceFile:334)
+	at mb.a(SourceFile:508)
+	at it.a(SourceFile:126)
+	at it$b.a(SourceFile:18)
+	at fh$1.run(SourceFile:13)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at g.a(SourceFile:45)
+	at net.minecraft.server.MinecraftServer.D(SourceFile:597)
+	at la.D(SourceFile:339)
+	at net.minecraft.server.MinecraftServer.C(SourceFile:553)
+
+-- Thread Dump --
+Details:
+	Threads: "File IO Thread" Id=26 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at bba.c(SourceFile:51)
+	at bba.run(SourceFile:30)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Java2D Disposer" Id=23 WAITING on java.lang.ref.ReferenceQueue$Lock@3f44c5bd
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@3f44c5bd
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:135)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+	at sun.java2d.Disposer.run(Disposer.java:145)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Server Watchdog" Id=22 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:446)
+	at lb.run(SourceFile:43)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Query Listener #1" Id=21 RUNNABLE (in native)
+	at java.net.PlainDatagramSocketImpl.receive0(Native Method)
+	-  locked java.net.PlainDatagramSocketImpl@3c121bbe
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:146)
+	-  locked java.net.PlainDatagramSocketImpl@3c121bbe
+	at java.net.DatagramSocket.receive(DatagramSocket.java:817)
+	-  locked java.net.DatagramPacket@400ff745
+	-  locked java.net.DatagramSocket@565f5aa4
+	at nb.run(SourceFile:268)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+"Netty Epoll Server IO #1" Id=19 BLOCKED on java.util.ArrayDeque@5832f3de owned by "Server thread" Id=12
+	at net.minecraft.server.MinecraftServer.a(SourceFile:1265)
+	-  blocked on java.util.ArrayDeque@5832f3de
+	at net.minecraft.server.MinecraftServer.a(SourceFile:1281)
+	at lp.a(SourceFile:1161)
+	at fh.a(SourceFile:10)
+	at mb.a(SourceFile:835)
+	at je.a(SourceFile:32)
+	at je.a(SourceFile:9)
+	at ek.a(SourceFile:136)
+	...
+
+
+"Netty Epoll Server IO #0" Id=18 BLOCKED on java.util.ArrayDeque@5832f3de owned by "Server thread" Id=12
+	at net.minecraft.server.MinecraftServer.a(SourceFile:1265)
+	-  blocked on java.util.ArrayDeque@5832f3de
+	at net.minecraft.server.MinecraftServer.a(SourceFile:1281)
+	at lp.a(SourceFile:1161)
+	at fh.a(SourceFile:10)
+	at mb.a(SourceFile:732)
+	at iv.a(SourceFile:35)
+	at iv.a(SourceFile:8)
+	at ek.a(SourceFile:136)
+	...
+
+
+"Server console handler" Id=15 RUNNABLE (in native)
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:272)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	-  locked java.io.BufferedInputStream@7928a10e
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:283)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:325)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:177)
+	-  locked java.io.InputStreamReader@5560a607
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	...
+
+
+"DestroyJavaVM" Id=14 RUNNABLE
+
+
+"Server thread" Id=12 RUNNABLE
+	at java.io.RandomAccessFile.readBytes0(Native Method)
+	at java.io.RandomAccessFile.readBytes(RandomAccessFile.java:350)
+	at java.io.RandomAccessFile.read(RandomAccessFile.java:408)
+	at asq.a(SourceFile:207)
+	-  locked asq@3c34415b
+	at asr.c(SourceFile:89)
+	at ass.a(SourceFile:62)
+	at lo.f(SourceFile:124)
+	at lo.c(SourceFile:76)
+	...
+
+
+"Server Infinisleeper" Id=11 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at la$1.run(SourceFile:77)
+
+
+"Snooper Timer" Id=10 TIMED_WAITING on java.util.TaskQueue@aaedc3e
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@aaedc3e
+	at java.util.TimerThread.mainLoop(Timer.java:552)
+	at java.util.TimerThread.run(Timer.java:505)
+
+
+"Signal Dispatcher" Id=4 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@5dfd6fec
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@5dfd6fec
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:135)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@29bf1f29
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@29bf1f29
+	at java.lang.Object.wait(Object.java:503)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:133)
+
+
+
+Stacktrace:
+	at lb.run(SourceFile:59)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.9.2
+	Operating System: Linux (amd64) version 3.13.0-85-generic
+	Java Version: 1.7.0_95, Oracle Corporation
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 239013064 bytes (227 MB) / 506986496 bytes (483 MB) up to 628490240 bytes (599 MB)
+	JVM Flags: 2 total; -Xms500M -Xmx620M
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	Profiler Position: N/A (disabled)
+	Player Count: 2 / 20; [lr['JustBroCorp'/294, l='LifeWorld', x=3326.25, y=62.07, z=994.20], lr['begarco'/1569, l='LifeWorld', x=2095.98, y=68.00, z=1609.49]]
+	Is Modded: Unknown (can't tell)
+	Type: Dedicated Server (map_server.txt)
