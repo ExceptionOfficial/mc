@@ -1,63 +1,38 @@
-[12:46:21] [Server thread/INFO]: Starting minecraft server version 1.9.2
-[12:46:21] [Server thread/INFO]: Loading properties
-[12:46:21] [Server thread/INFO]: Default game type: SURVIVAL
-[12:46:21] [Server thread/INFO]: Generating keypair
-[12:46:25] [Server thread/INFO]: Starting Minecraft server on *:25565
-[12:46:25] [Server thread/INFO]: Using epoll channel type
-[12:46:26] [Server thread/INFO]: Preparing level "LifeWorld"
-[12:46:29] [Server thread/INFO]: Preparing start region for level 0
-[12:46:41] [Server thread/INFO]: Preparing spawn area: 0%
-[12:46:43] [Server thread/INFO]: Preparing spawn area: 1%
-[12:46:45] [Server thread/INFO]: Preparing spawn area: 1%
-[12:46:46] [Server thread/INFO]: Preparing spawn area: 1%
-[12:46:47] [Server thread/INFO]: Preparing spawn area: 3%
-[12:46:48] [Server thread/INFO]: Preparing spawn area: 4%
-[12:46:49] [Server thread/INFO]: Preparing spawn area: 8%
-[12:46:50] [Server thread/INFO]: Preparing spawn area: 13%
-[12:46:51] [Server thread/WARN]: Keeping entity Chicken that already exists with UUID 51ff6e83-919b-4715-a6b3-80f644de186f
-[12:46:51] [Server thread/INFO]: Preparing spawn area: 22%
-[12:46:52] [Server thread/WARN]: Keeping entity Rabbit that already exists with UUID 69c574fa-3707-4952-a080-31e3d3e9e3f0
-[12:46:52] [Server thread/WARN]: Keeping entity Chicken that already exists with UUID 2eadced5-5130-46b7-b9bd-721c220c13db
-[12:46:52] [Server thread/WARN]: Keeping entity Rabbit that already exists with UUID ae67e9ce-60f3-46cc-abdb-7ef376f3e9c8
-[12:46:52] [Server thread/INFO]: Preparing spawn area: 33%
-[12:46:53] [Server thread/WARN]: Keeping entity Rabbit that already exists with UUID 27a38fcb-d54e-4315-8e25-1e995cdc7cb5
-[12:46:53] [Server thread/WARN]: Keeping entity Chicken that already exists with UUID 79d3043d-be3c-48c5-a9d0-705cf6a1452e
-[12:46:54] [Server thread/INFO]: Preparing spawn area: 49%
-[12:46:54] [Server thread/WARN]: Keeping entity Rabbit that already exists with UUID 87f6ddf5-a100-4722-be3e-689681f8c866
-[12:46:55] [Server thread/WARN]: Keeping entity Sheep that already exists with UUID 18e84cb6-a864-4e36-9f4c-8c48784f1a8a
-[12:46:55] [Server thread/INFO]: Preparing spawn area: 54%
-[12:46:55] [Server thread/WARN]: Keeping entity Pig that already exists with UUID 2171fc37-33b2-49de-98ea-d611ef624f6e
-[12:46:55] [Server thread/WARN]: Keeping entity Pig that already exists with UUID 2fc2c6c1-f90c-439b-acc2-a4ede75f731b
-[12:46:55] [Server thread/WARN]: Keeping entity Cow that already exists with UUID 73d3089f-1623-430f-b267-d1ca1193e15a
-[12:46:56] [Server thread/INFO]: Preparing spawn area: 61%
-[12:46:56] [Server thread/WARN]: Keeping entity Pig that already exists with UUID 4038bb46-cb71-4d0e-9671-4f61d95da345
-[12:46:56] [Server thread/WARN]: Keeping entity Chicken that already exists with UUID 05fb4288-1a54-4573-b2a9-12dda3d2a978
-[12:46:57] [Server thread/WARN]: Keeping entity Sheep that already exists with UUID 0ade5f3a-6951-4112-a2a3-98677faa6980
-[12:46:57] [Server thread/INFO]: Preparing spawn area: 74%
-[12:46:57] [Server thread/WARN]: Keeping entity Cow that already exists with UUID 9295e7fe-2a79-4a24-975c-4e853fc1df37
-[12:46:58] [Server thread/INFO]: Preparing spawn area: 83%
-[12:46:59] [Server thread/WARN]: Keeping entity Cow that already exists with UUID 7f7c65c3-73ff-4e5d-a6f9-06289c1fead5
-[12:46:59] [Server thread/WARN]: Keeping entity Cow that already exists with UUID aa59f57f-50f5-49f9-8e4f-e6737afc24f8
-[12:46:59] [Server thread/INFO]: Preparing spawn area: 89%
-[12:47:00] [Server thread/INFO]: Preparing spawn area: 96%
-[12:47:00] [Server thread/INFO]: Done (34.077s)! For help, type "help" or "?"
-[12:47:00] [Server thread/INFO]: Starting GS4 status listener
-[12:47:00] [Server thread/INFO]: Starting remote control listener
-[12:47:00] [Query Listener #1/INFO]: Query running on 0.0.0.0:25566
-[12:47:00] [RCON Listener #2/INFO]: RCON running on 0.0.0.0:25567
-[12:47:07] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5632ms behind, skipping 112 tick(s)
-[12:47:35] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 18677ms behind, skipping 373 tick(s)
-[12:47:37] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2086ms behind, skipping 41 tick(s)
-[12:47:53] [User Authenticator #1/INFO]: UUID of player Pivale is 5cc75534-47bc-4958-81dc-437da7993d8f
-[12:47:54] [Server thread/INFO]: Pivale[/88.188.208.33:61770] logged in with entity id 303 at (3245.595706690806, 43.0, 989.7886396751319)
-[12:47:54] [Server thread/INFO]: Pivale joined the game
-[12:47:57] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3280ms behind, skipping 65 tick(s)
-[12:48:38] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 28488ms behind, skipping 569 tick(s)
-[12:48:43] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5574ms behind, skipping 111 tick(s)
-[12:48:58] [Server thread/INFO]: Unknown command. Try /help for a list of commands
-[12:49:40] [Server thread/WARN]: Pivale moved too quickly! -0.46667847675280427,4.5,-8.964367757931996
-[12:49:40] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5312ms behind, skipping 106 tick(s)
-[12:50:01] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 7999ms behind, skipping 159 tick(s)
-[12:50:20] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3451ms behind, skipping 69 tick(s)
-[12:51:06] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2427ms behind, skipping 48 tick(s)
-[12:51:27] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3099ms behind, skipping 61 tick(s)
+[09:54:56] [Server thread/INFO]: Starting minecraft server version 1.11.2
+[09:54:56] [Server thread/INFO]: Loading properties
+[09:54:56] [Server thread/INFO]: Default game type: SURVIVAL
+[09:54:56] [Server thread/INFO]: Generating keypair
+[09:54:56] [Server thread/INFO]: Starting Minecraft server on *:25565
+[09:54:57] [Server thread/INFO]: Using epoll channel type
+[09:54:57] [Server thread/INFO]: Preparing level "LifeWorld"
+[09:54:57] [Server thread/INFO]: Preparing start region for level 0
+[09:54:59] [Server thread/INFO]: Preparing spawn area: 0%
+[09:55:00] [Server thread/WARN]: Keeping entity minecraft:chicken that already exists with UUID 51ff6e83-919b-4715-a6b3-80f644de186f
+[09:55:00] [Server thread/WARN]: Keeping entity minecraft:rabbit that already exists with UUID 69c574fa-3707-4952-a080-31e3d3e9e3f0
+[09:55:00] [Server thread/WARN]: Keeping entity minecraft:chicken that already exists with UUID 2eadced5-5130-46b7-b9bd-721c220c13db
+[09:55:00] [Server thread/WARN]: Keeping entity minecraft:rabbit that already exists with UUID ae67e9ce-60f3-46cc-abdb-7ef376f3e9c8
+[09:55:00] [Server thread/INFO]: Preparing spawn area: 39%
+[09:55:00] [Server thread/WARN]: Keeping entity minecraft:rabbit that already exists with UUID 27a38fcb-d54e-4315-8e25-1e995cdc7cb5
+[09:55:00] [Server thread/WARN]: Keeping entity minecraft:chicken that already exists with UUID 79d3043d-be3c-48c5-a9d0-705cf6a1452e
+[09:55:00] [Server thread/WARN]: Keeping entity minecraft:rabbit that already exists with UUID 87f6ddf5-a100-4722-be3e-689681f8c866
+[09:55:00] [Server thread/WARN]: Keeping entity minecraft:sheep that already exists with UUID 18e84cb6-a864-4e36-9f4c-8c48784f1a8a
+[09:55:00] [Server thread/WARN]: Keeping entity minecraft:pig that already exists with UUID 2171fc37-33b2-49de-98ea-d611ef624f6e
+[09:55:00] [Server thread/WARN]: Keeping entity minecraft:pig that already exists with UUID 2fc2c6c1-f90c-439b-acc2-a4ede75f731b
+[09:55:00] [Server thread/WARN]: Keeping entity minecraft:cow that already exists with UUID 73d3089f-1623-430f-b267-d1ca1193e15a
+[09:55:01] [Server thread/WARN]: Keeping entity minecraft:pig that already exists with UUID 4038bb46-cb71-4d0e-9671-4f61d95da345
+[09:55:01] [Server thread/WARN]: Keeping entity minecraft:chicken that already exists with UUID 05fb4288-1a54-4573-b2a9-12dda3d2a978
+[09:55:01] [Server thread/WARN]: Keeping entity minecraft:cow that already exists with UUID 9295e7fe-2a79-4a24-975c-4e853fc1df37
+[09:55:01] [Server thread/INFO]: Preparing spawn area: 84%
+[09:55:01] [Server thread/WARN]: Keeping entity minecraft:cow that already exists with UUID 7f7c65c3-73ff-4e5d-a6f9-06289c1fead5
+[09:55:01] [Server thread/WARN]: Keeping entity minecraft:cow that already exists with UUID aa59f57f-50f5-49f9-8e4f-e6737afc24f8
+[09:55:01] [Server thread/INFO]: Done (4.532s)! For help, type "help" or "?"
+[09:55:01] [Server thread/INFO]: Starting GS4 status listener
+[09:55:01] [Server thread/INFO]: Starting remote control listener
+[09:55:01] [Query Listener #1/INFO]: Query running on 0.0.0.0:25566
+[09:55:02] [RCON Listener #2/INFO]: RCON running on 0.0.0.0:25567
+[09:55:12] [User Authenticator #1/INFO]: UUID of player begarco is 91aa6f06-b798-4f94-9d30-72625ce4bc44
+[09:55:13] [Server thread/WARN]: Invalid statistic in ./LifeWorld/stats/91aa6f06-b798-4f94-9d30-72625ce4bc44.json: Don't know what stat.killEntity.EntityHorse is
+[09:55:13] [Server thread/INFO]: begarco[/92.171.81.189:50203] logged in with entity id 440 at (13628.923467808445, 77.0, -958.5447806732172)
+[09:55:13] [Server thread/INFO]: begarco joined the game
+[09:56:48] [Server thread/INFO]: begarco lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}
+[09:56:48] [Server thread/INFO]: begarco left the game
