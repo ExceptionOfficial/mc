@@ -1,0 +1,61 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 3/14/17 5:46 PM
+Description: Exception ticking world
+
+java.util.ConcurrentModificationException
+	at java.util.HashMap$HashIterator.remove(HashMap.java:940)
+	at lv.d(SourceFile:198)
+	at lw.d(SourceFile:201)
+	at net.minecraft.server.MinecraftServer.D(SourceFile:626)
+	at lh.D(SourceFile:335)
+	at net.minecraft.server.MinecraftServer.C(SourceFile:562)
+	at net.minecraft.server.MinecraftServer.run(SourceFile:466)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.util.HashMap$HashIterator.remove(HashMap.java:940)
+	at lv.d(SourceFile:198)
+	at lw.d(SourceFile:201)
+
+-- Affected level --
+Details:
+	Level name: LifeWorld
+	All players: 0 total; []
+	Chunk stats: ServerChunkCache: 704 Drop: 449
+	Level seed: -288133054
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (0,0,0), Chunk: (at 0,0,0 in 0,0; contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 642388524 game time, 647645987 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 83195 (now: false), thunder time: 85639 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.D(SourceFile:626)
+	at lh.D(SourceFile:335)
+	at net.minecraft.server.MinecraftServer.C(SourceFile:562)
+	at net.minecraft.server.MinecraftServer.run(SourceFile:466)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.11.2
+	Operating System: Linux (amd64) version 3.13.0-110-generic
+	Java Version: 1.7.0_121, Oracle Corporation
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 252992472 bytes (241 MB) / 506986496 bytes (483 MB) up to 628490240 bytes (599 MB)
+	JVM Flags: 2 total; -Xms500M -Xmx620M
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 20; []
+	Is Modded: Unknown (can't tell)
+	Type: Dedicated Server (map_server.txt)
