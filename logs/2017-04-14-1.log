@@ -1,0 +1,60 @@
+[00:00:02] [Server thread/INFO]: Turned off world auto-saving
+[00:00:03] [Server thread/INFO]: Saving...
+[00:00:03] [Server thread/INFO]: Saved the world
+[00:00:03] [Server thread/INFO]: Turned on world auto-saving
+[00:30:01] [Server thread/INFO]: Turned off world auto-saving
+[00:30:02] [Server thread/INFO]: Saving...
+[00:30:02] [Server thread/INFO]: Saved the world
+[00:30:02] [Server thread/INFO]: Turned on world auto-saving
+[01:00:02] [Server thread/INFO]: Turned off world auto-saving
+[01:00:02] [Server thread/INFO]: Saving...
+[01:00:02] [Server thread/INFO]: Saved the world
+[01:00:02] [Server thread/INFO]: Turned on world auto-saving
+[01:30:02] [Server thread/INFO]: Turned off world auto-saving
+[01:30:02] [Server thread/INFO]: Saving...
+[01:30:02] [Server thread/INFO]: Saved the world
+[01:30:02] [Server thread/INFO]: Turned on world auto-saving
+[02:00:02] [Server thread/INFO]: Turned off world auto-saving
+[02:00:02] [Server thread/INFO]: Saving...
+[02:00:02] [Server thread/INFO]: Saved the world
+[02:00:02] [Server thread/INFO]: Turned on world auto-saving
+[02:30:02] [Server thread/INFO]: Turned off world auto-saving
+[02:30:02] [Server thread/INFO]: Saving...
+[02:30:02] [Server thread/INFO]: Saved the world
+[02:30:02] [Server thread/INFO]: Turned on world auto-saving
+[03:00:02] [Server thread/INFO]: Turned off world auto-saving
+[03:00:02] [Server thread/INFO]: Saving...
+[03:00:02] [Server thread/INFO]: Saved the world
+[03:00:02] [Server thread/INFO]: Turned on world auto-saving
+[03:30:02] [Server thread/INFO]: Turned off world auto-saving
+[03:30:02] [Server thread/INFO]: Saving...
+[03:30:02] [Server thread/INFO]: Saved the world
+[03:30:03] [Server thread/INFO]: Turned on world auto-saving
+[04:00:02] [Server thread/INFO]: Turned off world auto-saving
+[04:00:02] [Server thread/INFO]: Saving...
+[04:00:02] [Server thread/INFO]: Saved the world
+[04:00:02] [Server thread/INFO]: Turned on world auto-saving
+[04:22:11] [Server thread/INFO]: [STDERR]: java.io.IOException: No space left on device
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at java.io.FileOutputStream.writeBytes(Native Method)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at java.io.FileOutputStream.write(FileOutputStream.java:313)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at java.util.zip.GZIPOutputStream.writeHeader(GZIPOutputStream.java:182)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at java.util.zip.GZIPOutputStream.<init>(GZIPOutputStream.java:94)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at java.util.zip.GZIPOutputStream.<init>(GZIPOutputStream.java:109)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at ed.a(SourceFile:33)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at bbt.a(SourceFile:124)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at bbq.a(SourceFile:45)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at lw.a(SourceFile:927)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at lw.a(SourceFile:880)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at net.minecraft.server.MinecraftServer.a(SourceFile:380)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at net.minecraft.server.MinecraftServer.C(SourceFile:580)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at net.minecraft.server.MinecraftServer.run(SourceFile:466)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at java.lang.Thread.run(Thread.java:745)
+[04:22:11] [Server thread/INFO]: [STDERR]: java.io.IOException: No space left on device
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at java.io.FileOutputStream.writeBytes(Native Method)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at java.io.FileOutputStream.write(FileOutputStream.java:313)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at java.util.zip.GZIPOutputStream.writeHeader(GZIPOutputStream.java:182)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at java.util.zip.GZIPOutputStream.<init>(GZIPOutputStream.java:94)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at java.util.zip.GZIPOutputStream.<init>(GZIPOutputStream.java:109)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at ed.a(SourceFile:33)
+[04:22:11] [Server thread/INFO]: [STDERR]: 	at bce.a(SourceFile:95)
+[04:22:11] [Server thread/INFO]
